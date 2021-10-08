@@ -1,5 +1,5 @@
-const speak = (message) =>{
-    const text = new SpeechSynthesisUtterance(message);
+const speak = (msg) =>{
+    const text = new SpeechSynthesisUtterance(msg);
     [text.voice] = speechSynthesis.getVoice();
     speechSynthesis.speak(text);
 };
