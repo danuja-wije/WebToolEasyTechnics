@@ -1,6 +1,6 @@
 const speak = (msg) =>{
-    const sp = new SpeechSynthesisUtterance(msg);
-    [sp.voice] = speechSynthesis.getVoice();
-    speechSynthesis.speak(sp);
+    const text = new SpeechSynthesisUtterance(msg);
+    [text.voice] = speechSynthesis.getVoice();
+    speechSynthesis.speak(text);
 };
-speak('My name is Inigo montoya,'+'you killed my father,'+'prepare to die!');
+speak('My name is Inigo montoya, you killed my father, prepare to die!');
